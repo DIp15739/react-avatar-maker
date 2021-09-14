@@ -1,0 +1,131 @@
+#body,
+.eyes-container,
+.ears-container,
+.nose-container,
+.mouth-container,
+.clothes-container {
+  position: absolute;
+}
+
+#body {
+  top: 80px;
+  left: 120px;
+  height: calc(100vh - 100px);
+}
+
+.eyes-container {
+  top: 140px;
+  left: 168px;
+  height: 65px;
+  width: 210px;
+  img {
+    width: inherit;
+  }
+}
+
+.nose-container {
+  top: 220px;
+  left: 240px;
+  width: 50px;
+  img {
+    width: inherit;
+  }
+}
+
+.mouth-container {
+  top: 273px;
+  left: 223px;
+  width: 80px;
+  img {
+    width: inherit;
+    max-height: 40px;
+  }
+}
+
+.clothes-container {
+  top: 324px;
+  left: 165px;
+  width: 215px;
+  img {
+    width: inherit;
+  }
+}
+
+.ears-container {
+  top: 67px;
+  left: 107px;
+  width: 338px;
+  img {
+    width: inherit;
+  }
+}
+
+// update this map when new items or categories are added
+$items: (
+  "eyes": 9,
+  "ears": 3,
+  "mouth": 4,
+  "nose": 3,
+  "clothes": 3,
+);
+
+// Position "next" buttons
+
+$height: 410px;
+
+@each $item, $total in $items {
+  $height: $height + 30px;
+
+  #next#{$item} {
+    position: absolute;
+    left: 600px;
+    top: $height;
+  }
+}
+
+// Position "randomize" button
+
+#randomize {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.e-container {
+  display: flex;
+  overflow-x: scroll;
+  align-items: center;
+}
+
+.e-container img {
+  margin-left: 50px;
+  width: 60px;
+}
+
+.row {
+  display: flex;
+}
+.col {
+  width: 50%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cccccc;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(110, 110, 110);
+}
