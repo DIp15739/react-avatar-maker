@@ -107,6 +107,7 @@ $height: 410px;
 }
 .col {
   width: 50%;
+  height: 100vh;
 }
 
 /* width */
@@ -128,4 +129,11 @@ $height: 410px;
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(110, 110, 110);
+}
+
+#imagePpreview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

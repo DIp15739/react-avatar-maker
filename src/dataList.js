@@ -60,8 +60,7 @@ const dataList = {
     { name: "clothes2", url: clothes2, id: "clothes2" },
     { name: "clothes3", url: clothes3, id: "clothes3" },
   ],
+  body: [{ name: "body", url: body, id: "body" }],
 };
-
-export const bodyUrl = body;
 
 export default dataList;
