@@ -83,14 +83,6 @@ $height: 410px;
   }
 }
 
-// Position "randomize" button
-
-#randomize {
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .e-container {
   display: flex;
   overflow-x: scroll;
@@ -136,4 +128,61 @@ $height: 410px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#bg {
+  margin: 40px;
+  height: 500px;
+}
+
+#helement {
+  position: absolute;
+  top: 141px;
+  height: 118px;
+  left: 138px;
+}
+
+#logo {
+  position: absolute;
+  height: 50px;
+  top: 151px;
+  left: 219px;
+}
+
+#tck {
+  position: absolute;
+  height: 53px;
+  top: 488px;
+  left: 203px;
+}
+#city {
+  position: absolute;
+  height: 500px;
+  top: 41px;
+  left: 40px;
+}
+
+#teamName {
+  position: absolute;
+  top: 419px;
+  left: 166px;
+  color: #fff;
+  font-size: 26px;
+}
+#teamRating {
+  position: absolute;
+  top: 484px;
+  color: #fff;
+  left: 216px;
+  font-size: 24px;
+}
+.buttons {
+  position: absolute;
+  left: 90px;
+  top: 573px;
+  button,
+  input {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
 }
